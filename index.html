@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9196a0e44b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Oswald:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scss/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+<nav class='nav'>
+    <h5>SPLASH! <span>coffee house</span></h5>
+    <a href="/">Home</>
+    <a href="/#about">About</a>
+    <a href="/#signup">Newsletter</a>
+    <a href="/#contact">Contact</a>
+
+    
+    <div class='hamburger'>
+        <div class='hamburger__first'></div>
+        <div class='hamburger__second'></div>
+        <div class='hamburger__third'></div>
+    </div>
+</nav>
+
+
+    <div class="hero">
+        <div class="mug">
+            <div class="mug-water"></div>
+        </div>
+    </div>
+    
+    <div class="section2" id='about'>
+        <img id='bag' src='/imgs/sack.png'/ data-depth='0.1'>
+        <button id='clickOnBag'>click me</button>
+
+        <div class="beansBag"></div>  
+   
+        <div class="about">
+            <h1>About us</h1>
+            <p>Loren ipsum dolor sit amet consectetur adipisicing elit. Atque, dignissimos accusamus in, expedita aut eum nesciunt officiis suscipit accusantium enim repellat impedit soluta. Quasi accusantium inventore atque mollitia itaque, optio fugit explicabo tempore quisquam iste tempora voluptatum. Facere ducimus dicta error id nam? Consequuntur, explicabo. Modi est cumque in inventore.</p>
+        </div>
+    </div>
+
+    <div class="signup" id='signup'>
+         <h1>Sign up to our newsletter</h1> 
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat delectus ipsum vel tenetur odio incidunt magni suscipit commodi doloremque tempore.</p>
+
+      
+        <form action=''>
+          <input type='text' placeholder='Your email address'>
+          <input id='submit' type='submit' value='Sign up'>
+        </form>
+        <div class='mug_container'>
+      <div class="mug_inner"></div>
+        </div>
+       
+        <img src='imgs/img1.jpg' alt='img2'>
+       
+    </div>
+
+    <div class='contactArea' id='contact'>
+        
+        <div class="contact" >
+            <h1>
+                Visit us
+            </h1>
+            <div class="phone">
+                <i class="fas fa-phone-square-alt"></i>
+                <a href='tel:+4201111111'>+420 111 111 111</a>
+            </div>
+            <div class="email">
+                <i class="fas fa-envelope-square"></i>
+                <a href='mailto:splash@coffeehouse.com'>splash@coffeehouse.com</a>
+            </div>
+            <div class="address">
+                <i class="fas fa-map-marked-alt"></i>
+                <a href=''>From Scratch 1, Coffee Town 123 45</a>
+            </div>
+            
+        </div>
+
+        <img src="/imgs/logo.png" alt="">
+        
+       
+    </div>
+<footer>
+    <h5>Created by 
+        <a href="https://github.com/fikymar">FikyMar</a>2021</h5>
+    
+</footer>
+
+    <svg>
+        <filter id='turbulence' x='0' y='0' width='100%' height='100%'>
+            <feTurbulence id='water-filter' numOctaves='5' seed='20' baseFrequency='0.02 0.06' type='fractalNoise'></feTurbulence>
+        <feDisplacementMap scale='6' in='SourceGraphic'></feDisplacementMap>
+        <animate xlink:href='#water-filter' attributeName='baseFrequency' dur='30s'
+        keyTimes='0;0.5;1' values='0.02 0.06;0.04 0.08;0.02 0.06' repeatCount='indefinite'></animate>
+        </filter>
+    </svg>
+    <script src="script.js"></script>
+</body>
+
+</html>

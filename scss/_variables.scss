@@ -1,0 +1,33 @@
+//colors
+$lightbrown: #c8ad9d; //	rgb(200, 173, 157)
+$mediumbrown: #8c7c73; //	rgb(140, 124, 115)
+$beige: #f6d1ba; //rgb(246, 209, 186)
+$dark: #141c2c; //	rgb(20, 28, 44)
+$color: #4f6faf; // rgb(79, 111, 175)
+$white: #fefefe;
+
+//breakpoints
+@media (min-width: 1024px) {
+}
+
+$breakpoints-up: (
+	"small": "801px",
+	"medium": "1025px",
+	"large": "1381px",
+	"xlarge": "1600px",
+);
+
+$breakpoints-down: (
+	"xs": "500px",
+	"small": "800px",
+	"medium": "1024px",
+	"midi": "1280px",
+	"large": "1380px",
+	"xlarge": "1599px",
+);
+
+@mixin breakpoint-down($size) {
+	@media (max-width: map-get($breakpoints-down, $size)) {
+		@content;
+	}
+}

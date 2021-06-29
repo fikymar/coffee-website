@@ -1,0 +1,71 @@
+.nav {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	font-weight: 600;
+	text-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+	backdrop-filter: grayscale(100%) blur(2px);
+	z-index: 100;
+
+	@include breakpoint-down(small) {
+		justify-content: space-evenly;
+		width: 100vw;
+	}
+
+	& h5 {
+		font-size: 2rem;
+		color: $beige;
+		padding-top: 1rem;
+		margin-left: 2rem;
+
+		@include breakpoint-down(small) {
+			//display: none;
+		}
+
+		& span {
+			color: $white;
+			@include breakpoint-down(medium) {
+				font-size: 0.5rem;
+				font-weight: 400;
+				display: block;
+			}
+		}
+
+		@include breakpoint-down(medium) {
+			font-size: 1rem;
+			font-weight: 500;
+		}
+	}
+
+	& a {
+		color: $color;
+		font-size: 2rem;
+		padding-top: 1rem;
+		padding-right: 3rem;
+		transition: scale 0.5s ease-in-out;
+
+		@include breakpoint-down(medium) {
+			font-size: 1rem;
+		}
+
+		@include breakpoint-down(small) {
+			padding-right: 1rem;
+			font-size: 1rem;
+		}
+
+		&:hover {
+			//transform: scale(1.2);
+			text-transform: uppercase;
+		}
+	}
+
+	& img {
+		height: 200px;
+		margin-top: -30px;
+		padding-top: 0;
+	}
+}

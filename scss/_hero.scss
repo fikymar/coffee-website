@@ -1,0 +1,27 @@
+.hero {
+	min-height: 100vh;
+	min-width: 100vw;
+	display: grid;
+	place-items: center;
+}
+
+.mug {
+	height: 50vh;
+	width: 50vh;
+	background-image: url("/Coffee-Mug-PNG-Picture.png");
+	background-size: cover;
+	filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.5));
+
+	@include breakpoint-down(medium) {
+		height: 30vh;
+		width: 30vh;
+	}
+}
+
+.mug-water {
+	background-image: url("/Coffee-Mug-orez.png");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	filter: url("#turbulence");
+}
