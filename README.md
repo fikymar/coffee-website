@@ -1,5 +1,5 @@
 # coffee-website
-website design and code
+prototype website design and code
 
 live: https://coffee-website-beta.vercel.app/
 
