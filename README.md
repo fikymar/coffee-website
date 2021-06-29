@@ -1,7 +1,7 @@
 # coffee-website
 website design and code
 
-live: [go]https://coffee-website-beta.vercel.app/){:target="_blank" rel="noopener"}
+live: [go](https://coffee-website-beta.vercel.app/){:target="_blank" rel="noopener"}
 
 - HTML, SCSS, JavaScript 
 
