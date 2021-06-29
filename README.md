@@ -5,6 +5,6 @@ live: https://coffee-website-beta.vercel.app/
 
 ###### HTML, SCSS, JavaScript 
 
-  parallax effect
+ - parallax effect
 - JS animace 
 - svg filtr
