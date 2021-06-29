@@ -3,8 +3,8 @@ website design and code
 
 live: https://coffee-website-beta.vercel.app/
 
-- HTML, SCSS, JavaScript 
+###### HTML, SCSS, JavaScript 
 
-- parallax effect
+  parallax effect
 - JS animace 
 - svg filtr
